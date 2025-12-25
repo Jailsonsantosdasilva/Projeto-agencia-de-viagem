@@ -1,0 +1,1 @@
+Projeto de uma landing page responsiva para uma agência de viagens fictícia chamada Horizonte Turismo, desenvolvida com foco em UI moderna, responsividade, animações suaves e boa experiência do usuário.
