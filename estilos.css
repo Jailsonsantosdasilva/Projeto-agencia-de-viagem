@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+     font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    transition: background-color .4s ease;
+}
+
+
+.header-box{
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.header-box .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-box .logo h1{
+    color: #fff;
+    font-size: 2.3rem;
+}
+
+.header-box .nav{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.header-box .nav a{
+    position: relative;
+    padding: .5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+        transition: color .5s ease-in-out;
+}
+
+.header-box .nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #ccc;
+    transition: width .5s ease-in-out;
+}
+
+.header-box .nav a:hover{
+    color: #ccc;
+}
+
+.header-box .nav a:hover::after{
+    width: 100%;
+}
+
+.btnBars{
+    color: #fff;
+    background-color: transparent;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: none;
+}
+
+.header img{
+    display: flex;
+    max-width: 100px;
+}
+
+.section{
+    max-width: 1300px;
+    margin: auto;
+    scroll-margin-top: 120px;
+}
+
+.main{
+    width: 100%;
+    min-height:100vh;
+     background:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+     url(img/pexels-pixabay-62623.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.main-container{
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.main-box{
+    max-width: 500px;
+    color: #fff;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.main-box h2{
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.main-box h2 span{
+    color:#489fce ;
+}
+
+.main-box p{
+    font-size: 1.4rem;
+    text-align: justify;
+    margin-bottom: 2.5rem;
+}
+
+.btn{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #489fce;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.39);
+    transition: .3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: #2e6888;
+    box-shadow: 0px 0px 10px 5px #489fce;
+}
+
+.header.sticky{
+    background-color: #489fce;
+}
+
+.sobre{
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre h2{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.sobre h2 span{
+    color: #489fce;
+}
+
+.sobre-container{
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.164);
+}
+
+.sobre-container .img img{
+    display: flex;
+    max-width: 900px;
+}
+
+.sobre-box{
+    align-items: center;
+    padding: 0rem 2rem
+}
+
+.sobre-box h3{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.sobre-box p{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.servicos{
+    margin-bottom: 5rem;
+    min-height: 100vh;
+}
+
+.servicos-box{
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.servicos h2{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.servicos h2 span{
+    color: #489fce;
+}
+
+.servicos .servicos-cards{
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem .5rem;
+    border-radius: 12px;
+    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.281);
+    transition: .3s ease-in-out;
+}
+
+.servicos .servicos-cards:hover{
+        box-shadow: 0px 0px 5px 5px #489fce;
+        transform: scale(1.05);
+}
+
+.servicos-cards h3{
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 1.1rem;
+}
+
+.servicos-cards p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.servicos .servicos-cards img{
+    display: flex;
+    width: 200px;
+    margin-bottom: 1.5rem;
+}
+
+.endereco{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.endereco h2{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.endereco h2 span{
+    color: #489fce;
+}
+
+.end-box{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.end-box iframe{
+    background-color: #489fce;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 1px 2px 5px 3px rgba(0, 0, 0, 0.281);
+}
+
+
+
+footer p{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 1.5rem 0rem;
+}
+
+@media (max-width: 768px){
+    .btnBars{
+        display: block;
+        z-index: 1;
+    }
+
+    .header-box{
+        padding: 1rem 2rem;
+    }
+
+    .nav{
+        background-color:#489fce;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        transform: translateX(100%);
+        transition:transform .4s ease-in-out ;
+    }
+
+    .nav a{
+        width: 100%;
+        text-align: center;
+        margin: 2rem 0rem;
+    }
+
+    .open{
+        transform: translateX(0%);
+    }
+
+    .main-container{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-box{
+        text-align: center;
+    }
+
+    .main-box h2{
+        font-size: 4rem;
+    }
+
+    .main-box p{
+        font-size: 1.2rem;
+    }
+    .sobre{
+        padding: 0rem 2rem;
+    }
+
+    .sobre-container{
+        flex-direction: column;
+        max-width: 600px;
+        margin: auto;
+        padding: 1.5rem 2rem;
+    }
+
+    .sobre-container img{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .servicos-box{
+        padding: 0rem 2rem;
+    }
+    
+    .servicos .servicos-cards:hover{
+        box-shadow:  0px 5px 5px 2px rgba(0, 0, 0, 0.281);
+        transform: scale(1);
+}
+
+    .end-box{
+      max-width: 100%;
+      padding: 0rem 2rem;
+    }
+
+    .sobre h2{
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    .servicos h2{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    }
+
+    .endereco h2{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    }
+
+    footer p{
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 480px){
+
+   .header-box .logo h1{
+    font-size: 1.9rem;
+   }
+
+   .header-box .logo img{
+    width: 200px;
+   }
+
+   .main-container h2{
+    font-size: 1.5rem;
+    width: 100%;
+   }
+
+   .main-container p{
+    font-size: 1rem;
+   }
+
+   .sobre-box {
+    text-align: center;
+   }
+
+   .sobre-box p{
+    font-size: 1.1rem;
+   }
+
+   .servicos-box{
+    padding: 0rem 5rem;
+   }
+}
