@@ -50,7 +50,7 @@ body{
 
 .header-box .logo h1{
     color: #fff;
-    font-size: 2.3rem;
+    font-size: 2rem;
 }
 
 .header-box .nav{
@@ -61,7 +61,7 @@ body{
 .header-box .nav a{
     position: relative;
     padding: .5rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 500;
     color: #fff;
         transition: color .5s ease-in-out;
@@ -132,7 +132,7 @@ body{
 }
 
 .main-box h2{
-    font-size: 4.5rem;
+    font-size: 3.1rem;
     text-transform: uppercase;
     text-align: justify;
 }
@@ -142,7 +142,7 @@ body{
 }
 
 .main-box p{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: justify;
     margin-bottom: 2.5rem;
 }
@@ -330,6 +330,10 @@ footer p{
         padding: 1rem 2rem;
     }
 
+    .header-box .logo h1{
+        font-size: 1.5rem;
+    }
+
     .nav{
         background-color:#489fce;
         position: absolute;
@@ -365,11 +369,11 @@ footer p{
     }
 
     .main-box h2{
-        font-size: 4rem;
+        font-size: 2.2rem;
     }
 
     .main-box p{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .sobre{
         padding: 0rem 2rem;
